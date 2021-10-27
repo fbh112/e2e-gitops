@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: f9f2b8d9588e4dbfa490bf80c35654e96fede136
+    app.openshift.io/vcs-ref: 03dad7b2cfdc3977be8e0a2ffe9e1a8a3ab02d3f
     app.openshift.io/vcs-uri: https://github.com/fbh112/e2e_nextjs
   labels:
     app.kubernetes.io/instance: nextjs-sample-app
@@ -24,7 +24,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: f9f2b8d9588e4dbfa490bf80c35654e96fede136
+    app.openshift.io/vcs-ref: 03dad7b2cfdc3977be8e0a2ffe9e1a8a3ab02d3f
     app.openshift.io/vcs-uri: https://github.com/fbh112/e2e_nextjs
   labels:
     app.kubernetes.io/instance: nextjs-sample-app
@@ -42,7 +42,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: f9f2b8d9588e4dbfa490bf80c35654e96fede136
+        app.openshift.io/vcs-ref: 03dad7b2cfdc3977be8e0a2ffe9e1a8a3ab02d3f
         app.openshift.io/vcs-uri: https://github.com/fbh112/e2e_nextjs
       labels:
         app.kubernetes.io/instance: nextjs-sample-app
@@ -54,7 +54,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/ting_wu/e2e_nextjs:f9f2b8d9588e4dbfa490bf80c35654e96fede136
+        image: quay.io/ting_wu/e2e_nextjs:03dad7b2cfdc3977be8e0a2ffe9e1a8a3ab02d3f
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -92,7 +92,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: f9f2b8d9588e4dbfa490bf80c35654e96fede136
+    app.openshift.io/vcs-ref: 03dad7b2cfdc3977be8e0a2ffe9e1a8a3ab02d3f
     app.openshift.io/vcs-uri: https://github.com/fbh112/e2e_nextjs
   labels:
     app.kubernetes.io/instance: nextjs-sample-app
